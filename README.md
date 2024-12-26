@@ -97,8 +97,8 @@ Adminium is licensed under the [MIT License](LICENSE).
 
 If you encounter any issues or need assistance, please use the following channels:
 
-- Open an issue on [GitHub Issues](#).
-- Start a discussion on [GitHub Discussions](#).
+- Open an issue on [GitHub Issues](https://github.com/miners-online/Adminium/issues).
+- Start a discussion on [GitHub Discussions](https://github.com/orgs/miners-online/discussions).
 
 Thank you for using Adminium!
 
