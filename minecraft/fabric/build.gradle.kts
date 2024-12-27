@@ -11,11 +11,15 @@ base {
 }
 
 dependencies {
-    "minecraft"("com.mojang:minecraft:${rootProject.findProperty("minecraft_version") as String}")
-    "mappings"("net.fabricmc:yarn:${rootProject.findProperty("yarn_mappings") as String}:v2")
+    minecraft("com.mojang:minecraft:${rootProject.findProperty("minecraft_version") as String}")
+    mappings("net.fabricmc:yarn:${rootProject.findProperty("yarn_mappings") as String}:v2")
     
-    "modImplementation"("net.fabricmc:fabric-loader:${rootProject.findProperty("loader_version") as String}")
-    "modImplementation"("net.fabricmc.fabric-api:fabric-api:${rootProject.findProperty("fabric_version") as String}")
+    modImplementation("net.fabricmc:fabric-loader:${rootProject.findProperty("loader_version") as String}")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:${rootProject.findProperty("fabric_version") as String}")
+
+    include(modImplementation("me.lucko:fabric-permissions-api:0.3.1") as Any)
+
+    implementation(project(":minecraft:core"))
 }
 
 tasks.named<ProcessResources>("processResources") {
